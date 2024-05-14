@@ -30,22 +30,22 @@ function nthawi() {
 function RestaurantCard() {
     let open_close = nthawi();
     return <>
-        <div className="ml-10 w-1/3 bg-gray-900 text text-white p-10 text-xl">
+        <div className="ml-10 w-1/3 bg-gray-900 text text-white p-10 text-xl rounded-lg">
             {/* <img src="/home/omikhe/Documents/INF221/group-project/food-delivery-system-UI/img.png" alt="" /> */}
 
 
             <div className="flex mb-5">
-                <div className="w-28 h-28 bg-black"></div>
+                <div className="w-28 h-28 bg-black rounded-lg"></div>
                 <div className="ml-5">
-                <h1 className="font-semibold mb-2">Bossman Restaurant</h1>
-                <h2 className="mb-1">Chikanda - Near Bridge</h2>
-                    <div className="flex items-center ">
+                <h1 className="font-semibold mb-3">Bossman Restaurant</h1>
+                <h2 className="mb-3 text-sm">Chikanda - Near Bridge</h2>
+                    <div className="flex items-center text-sm">
                         <div className="w-3 h-3 rounded-full bg-green-700 mr-1"></div>
                         <h2>{open_close}</h2>
                     </div>
                 </div>
             </div>
-            <button className="w-full border-white p-3">View Menu</button>
+            <button className="w-full border-white p-4 text-black bg-gray-400 rounded-lg">View Menu</button>
         </div>
     </>;
 }
@@ -77,7 +77,7 @@ function NavBar() {
 function Message() {
 
     return <>
-        <h1 className="flex h-10 pl-60 pr-60 pt-20 pb-20 text-bold">Choose your restaurant</h1>
+        <h1 className="flex h-10 pl-60 pr-60 pt-20 pb-20 text-bold text-xl">Choose your restaurant</h1>
 
     </>;
 }

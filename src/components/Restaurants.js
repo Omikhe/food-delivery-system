@@ -72,6 +72,11 @@ function Restaurants() {
             <RestaurantCard/>
             <RestaurantCard/>
         </div>
+        <div className="flex h-full pl-60 pr-60 pt-5 justify-around">
+            <RestaurantCard/>
+            <RestaurantCard/>
+            <RestaurantCard/>
+        </div>
         <div className="flex h-full pl-60 pr-60 pt-5 pb-20 justify-around">
             <RestaurantCard/>
             <RestaurantCard/>

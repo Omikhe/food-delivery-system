@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import img from './images/img.png';
 

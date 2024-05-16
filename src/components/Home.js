@@ -1,8 +1,11 @@
+import Navbar from "./Navbar.js";
+import Checkout from "./checkout.js";
 function Home(){
     return (
         <>
-        
-        <h1>FOOD DELIVERY SYSTEM</h1>
+        <Navbar/>
+        <Checkout/>
+        <h1> </h1>
         </>
 
     )

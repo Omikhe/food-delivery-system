@@ -1,0 +1,25 @@
+/* ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    font-weight: 700;
+}
+ul li{
+     margin-left: 2rem;
+    display: flex;
+    text-align: left;
+} 
+ul li span{
+    background: rgb(26, 24, 24);
+    color: white;
+    border-radius: 10px;   
+}
+
+ul li:hover{
+    color: rgb(215, 12, 12);
+    cursor: pointer;
+}
+ul li span:hover{
+    color: rgb(215, 12, 12);
+} */

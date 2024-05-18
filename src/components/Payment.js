@@ -21,7 +21,7 @@ const Payment=()=>{
         <p className="ml-40 mb-1.5 font-bold flex content-center">
             <MdOutlineArrowBackIos className="mr-2"/>
             Back </p>
-        <div className="flex bg-gray-100 items-center ml-40 mr-40  justify-around min-h-96 rounded-lg">
+        <div className="flex bg-gray-100 items-center ml-40 mr-40  justify-around min-h-96  rounded-lg">
             <img src={food} alt="payImage" className="h-80  w-80 rounded-lg"/>
             <div className="flex-column pr-1 min-w-16">
                 <p className="font-bold mb-5 text-base">Choose payment method</p>
@@ -39,11 +39,11 @@ const Payment=()=>{
                             option 2
                         </label>
                     </div>
-                    
-                </form>
-                <button className="bg-orange-500 py-1 px-2 text-white mt-5 w-20">
+                    <button className="bg-orange-600 py-1 px-2 text-white mt-5 w-20">
                         Proceed
-                </button>
+                    </button>  
+                </form>
+                
             </div>
         </div>
         </>

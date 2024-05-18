@@ -6,10 +6,13 @@ function Login() {
     return (<>
 
         <div className="h-screen flex flex-col items-center justify-center bg-cover bg-c" style={{ backgroundImage: `url(${img})` }}>
-            <div className="flex items-center justify-between m-5">
-                <a href="#" className="text-sm text-white font-bold mr-5 hover:text-orange-500">Login as</a>
-                <button type="submit" className="bg-orange-600 text-white px-4 py-2 mr-5 rounded-md hover:bg-orange-500 focus:outline-none focus:bg-orange-600">Student</button>
-                <button type="submit" className="bg-orange-600 text-white px-4 py-2 rounded-md hover:bg-orange-500 focus:outline-none focus:bg-orange-500">Restraunt Owner</button>
+            <div className="flex flex-col items-center justify-center absolute inset-0 bg-black bg-opacity-50">
+            <div className="flex flex-col items-center justify-between m-5">
+                <a href="#" className="text-sm text-white font-bold mr-5 mb-5 hover:text-orange-500">Login as</a>
+                <div className="flex">
+                    <button type="submit" className="bg-orange-600 text-white px-4 py-2 mr-5 rounded-md hover:bg-orange-500 focus:outline-none focus:bg-orange-600">Student</button>
+                    <button type="submit" className="bg-orange-600 text-white px-4 py-2 rounded-md hover:bg-orange-500 focus:outline-none focus:bg-orange-500">Restraunt Owner</button>
+                </div>
             </div>
             <div className="bg-white p-8 rounded shadow-md w-96">
                 <h2 className="text-2xl font-semibold mb-4">Login</h2>
@@ -27,6 +30,7 @@ function Login() {
                         <a href="#" className="text-sm text-orange-600 hover:text-orange-700">Forgot Password?</a>
                     </div>
                 </form>
+            </div>
             </div>
         </div>
     </>

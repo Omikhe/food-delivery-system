@@ -3,9 +3,11 @@ import React from "react";
 
 function Menu() {
   return (
-    <div className=" ml-6 mr-6">
+    <div className=" ml-20 mr-20">
       <div className="flex gap-10">
-        <img src="logo192.png" alt="Bosssman" />
+        <div className="w-60">
+          <img src="logo192.png" alt="Bosssman" />
+        </div>
         <div>
           <h1 className="text-[45px] font-bold">Bossman Restaurant</h1>
           <div className="flex gap-3">
@@ -20,114 +22,33 @@ function Menu() {
         <h1 className=" text-[50px] mb-6">Check out our menu!</h1>
         <hr className=" border border-black"></hr>
       </div>
-
-      <div className="flex flex-col items-center gap-6">
-        <ul className="flex gap-12 justify-around">
-          <li className="bg-slate-200 border rounded-2xl p-3">
-            <Link to="/" className=" flex flex-col items-center">
-              <img src="logo192.png" alt="Nsima with chisoso" />
-              <h2>Nsima & chisoso</h2>
-              <p>k3500</p>
-              <button className=" p-3 pl-6 pr-6 bg-orange-600 rounded-md">
-                order
-              </button>
-            </Link>
-          </li>
-          <li className="bg-slate-200 border rounded-2xl p-3">
-            <Link to="/" className=" flex flex-col items-center">
-              <img src="logo192.png" alt="Nsima with chisoso" />
-              <h2>Nsima & Chisoso</h2>
-              <p>k3500</p>
-              <button className=" p-3 pl-6 pr-6 bg-orange-600 rounded-md">
-                order
-              </button>
-            </Link>
-          </li>
-          <li className="bg-slate-200 border rounded-2xl p-3">
-            <Link to="/" className=" flex flex-col items-center">
-              <img src="logo192.png" alt="Nsima with chisoso" />
-              <h2>Nsima & Chisoso</h2>
-              <p>k3500</p>
-              <button className=" p-3 pl-6 pr-6 bg-orange-600 rounded-md">
-                order
-              </button>
-            </Link>
-          </li>
-          <li className="bg-slate-200 border rounded-2xl p-3">
-            <Link to="/" className=" flex flex-col items-center">
-              <img src="logo192.png" alt="Nsima with chisoso" />
-              <h2>Nsima & Chisoso</h2>
-              <p>k3500</p>
-              <button className=" p-3 pl-6 pr-6 bg-orange-600 rounded-md">
-                order
-              </button>
-            </Link>
-          </li>
-          <li className="bg-slate-200 border rounded-2xl p-3">
-            <Link to="/" className=" flex flex-col items-center">
-              <img src="logo192.png" alt="Nsima with chisoso" />
-              <h2>Nsima & Chisoso</h2>
-              <p>k3500</p>
-              <button className=" p-3 pl-6 pr-6 bg-orange-600 rounded-md">
-                order
-              </button>
-            </Link>
-          </li>
-        </ul>
-        <ul className="flex gap-12 justify-around">
-          <li className="bg-slate-200 border rounded-2xl p-3">
-            <Link to="/" className=" flex flex-col items-center">
-              <img src="logo192.png" alt="Nsima with chisoso" />
-              <h2>Nsima & Chisoso</h2>
-              <p>k3500</p>
-              <button className=" p-3 pl-6 pr-6 bg-orange-600 rounded-md">
-                order
-              </button>
-            </Link>
-          </li>
-          <li className="bg-slate-200 border rounded-2xl p-3">
-            <Link to="/" className=" flex flex-col items-center">
-              <img src="logo192.png" alt="Nsima with chisoso" />
-              <h2>Nsima & Chisoso</h2>
-              <p>k3500</p>
-              <button className=" p-3 pl-6 pr-6 bg-orange-600 rounded-md">
-                order
-              </button>
-            </Link>
-          </li>
-          <li className="bg-slate-200 border rounded-2xl p-3">
-            <Link to="/" className=" flex flex-col items-center">
-              <img src="logo192.png" alt="Nsima with chisoso" />
-              <h2>Nsima & Chisoso</h2>
-              <p>k3500</p>
-              <button className=" p-3 pl-6 pr-6 bg-orange-600 rounded-md">
-                order
-              </button>
-            </Link>
-          </li>
-          <li className="bg-slate-200 border rounded-2xl p-3">
-            <Link to="/" className=" flex flex-col items-center">
-              <img src="logo192.png" alt="Nsima with chisoso" />
-              <h2>Nsima & Chisoso</h2>
-              <p>k3500</p>
-              <button className=" p-3 pl-6 pr-6 bg-orange-600 rounded-md">
-                order
-              </button>
-            </Link>
-          </li>
-          <li className="bg-slate-200 border rounded-2xl p-3">
-            <Link to="/" className=" flex flex-col items-center">
-              <img src="logo192.png" alt="Nsima with chisoso" />
-              <h2>Nsima & Chisoso</h2>
-              <p>k3500</p>
-              <button className=" p-3 pl-6 pr-6 bg-orange-600 rounded-md">
-                order
-              </button>
-            </Link>
-          </li>
-        </ul>
-      </div>
+      <MenuCard></MenuCard>
     </div>
   );
 }
 export default Menu;
+
+function MenuCard() {
+  return (
+    <>
+<div className="w-40">
+          <li className=" flex justify-start bg-slate-200 rounded-2xl">
+            <Link to="/" className=" flex flex-col p-4 items">
+              <img
+                className="p-3 "
+                src="logo192.png"
+                alt="Nsima with chisoso"
+              />
+              <h2 className="font-bold text-center ">Nsima & chisoso</h2>
+              <p className="text-center">k3500</p>
+              <div className="">
+                <button className=" w-full p-1 pl-6 pr-6 bg-orange-600 text-white rounded-md">
+                  order
+                </button>
+              </div>
+            </Link>
+          </li>
+  </div>     
+    </>
+  );
+}

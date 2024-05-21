@@ -2,7 +2,7 @@
 import NavBar from "./Navbar";
 import { useState } from "react";
 import { MdOutlineArrowBackIos } from "react-icons/md";
-import food from "../images/food.jpg";
+import food from "./images/burger.jpg";
 
 
 

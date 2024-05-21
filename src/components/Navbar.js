@@ -7,6 +7,7 @@ function Navbar() {
             <nav className="flex w-full justify-between items-center">
                 <Link to="/">
                     <img src={logo} alt="FDS Logo" />
+
                 </Link>
                 <div className="flex w-90 items-center justify-between">
 

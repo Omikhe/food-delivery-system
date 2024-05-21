@@ -1,11 +1,13 @@
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import logo from './images/logo.svg';
 
 function Navbar() {
     return <>
         <div className="flex h-10 pl-60 pr-60 pt-20 pb-20 items-center justify-center font-sans font-medium text-xl" >
             <nav className="flex w-full justify-between items-center">
                 <Link to="/">
-                    <img src="src/components/images/logo.svg" alt="FDS Logo" />
+                    <img src={logo} alt="FDS Logo" />
+
                 </Link>
                 <div className="flex w-90 items-center justify-between">
 

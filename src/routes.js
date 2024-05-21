@@ -1,6 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import Login from "./components/Login.js";
 import Home from "./components/Home.js";
+import Payment from "./components/Payment.js";
+import Restraunts from "./components/Restaurants.js";
+import About from "./components/About.js";
+import Checkout from "./components/checkout.js";
+import Menu from "./components/menu.js";
+
 
 // Define the routes
 const router = createBrowserRouter([
@@ -15,6 +21,26 @@ const router = createBrowserRouter([
   {
     path: "/Login", // /login path
     element: <Login />, // Render the Login component
+  },
+  {
+    path: "/pay",
+    element: <Payment />
+  },
+  {
+    path: "/Restaurants",
+    element: <Restraunts />
+  },
+  {
+    path: "/About",
+    element: <About />
+  },
+  {
+    path: "/Checkout",
+    element: <Checkout />
+  },
+  {
+    path: "/Menu",
+    element: <Menu />
   }
 ]);
 

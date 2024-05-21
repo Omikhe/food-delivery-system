@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import logo from './images/logo.svg';
 
 function Navbar() {
     return <>
@@ -7,7 +8,8 @@ function Navbar() {
 </div>
  <div className="flex w-full justify-between items-center w-full">
                 <Link to="/">
-                    <img src="src/components/images/logo.svg" alt="FDS Logo" />
+                    <img src={logo} alt="FDS Logo" />
+
                 </Link>
 <div class=" flex justify-center ml-2 mr-2 mt-2">
                     <ul className="flex w-full justify-between font-normal">

@@ -26,7 +26,7 @@ const router = createBrowserRouter([
     path: "/pay",
     element: <Payment />
   },
-   {
+  {
     path: "/Restaurants",
     element: <Restraunts />
   },

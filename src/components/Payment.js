@@ -21,19 +21,20 @@ const Payment=()=>{
         <NavBar />
         {/* div supposed to be linked to previous page*/}
         <Link to="/checkout" className="">
-        <p className="ml-40 mb-1.5 font-bold flex items-center">
+        <p className="px-60 mb-1.5 font-bold flex items-center">
             <MdOutlineArrowBackIos className="mr-2 h-3"/>
             Back 
         </p>
         </Link>
-        <div className="flex bg-gray-100 items-center ml-40 mr-40  justify-around min-h-96  rounded-lg">
+        <div className="px-60">
+        <div className="flex bg-gray-100 items-center  justify-around min-h-96  rounded-lg">
             <img
                 src={food} 
                 alt="payImage" 
-                className="h-80  w-80 rounded-lg"
+                className="h-96 rounded-lg"
              />
 
-            <div className="flex-column pr-1 min-w-16">
+            <div className="flex-column pr-1 min-w-16 ml-5">
                 <p className="font-bold mb-5 text-base">Choose payment method</p>
 
                 <form   onSubmit={(e=>handleSubmit(e))}>
@@ -52,12 +53,15 @@ const Payment=()=>{
                             Airtel money
                         </label>
                     </div>
-                    <button className="bg-orange-600 py-1 px-2 text-white mt-5 w-6/12 ">
+                    <button className="bg-orange-600 py-1 px-6 text-white mt-5  rounded "
+                    
+                    >
                         Proceed
                     </button>  
                 </form>
                 
             </div>
+        </div>
         </div>
         </>
     )

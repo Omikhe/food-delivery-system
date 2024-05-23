@@ -31,7 +31,7 @@ const Delivery=()=>{
                     <div className="mb-2">
                         <input type="checkbox" onChange={()=>handleCheckBoxClick("second")} checked={selectedMethod==="second" }/>
                         <label className="font-normal ml-1">
-                            pick up
+                            Pick up
                         </label>
                     </div>
                     

@@ -11,7 +11,7 @@ function Signup() {
           <div className="flex flex-col  bg-white px-28 w-1/3 justify-center">
             <div className="flex flex-col mb-16 items-center">
               <img src={logo} className="w-80 mb-20"/>
-            <h2 className="text-2xl font-semibold mb-4">Log into your account</h2>
+            <h2 className="text-2xl font-semibold mb-4">Create a new account</h2>
             </div>
             <form>
               <div className="mb-4">

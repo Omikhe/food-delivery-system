@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Akuzike Foods",
+    "logo": "./images/pizza.png",
+    "Menu": [
+      {
+        "image": "./images/burger.png",
+        "name": "Signature Burger",
+        "price": "MWK2,500",
+        "description": "Our signature burger features a juicy beef patty, crisp lettuce, tomatoes, pickles, cheddar cheese, and our special sauce on a toasted brioche bun."
+      },
+      {
+        "image": "./images/pizza.png",
+        "name": "Margherita Pizza",
+        "price": "MWK4,500",
+        "description": "A classic pizza with fresh basil, tomato sauce, and mozzarella cheese on our homemade thin crust."
+      },
+      {
+        "image": "./images/spaghetti-meat-balls.png",
+        "name": "Spaghetti & Meatballs",
+        "price": "MWK3,500",
+        "description": "Tender spaghetti noodles tossed in a rich tomato sauce, served with savory meatballs made from ground beef and Italian seasoning."
+      },
+      {
+        "image": "./images/spaghetti-soya.png",
+        "name": "Spaghetti & Soya Pieces",
+        "price": "MWK3,500",
+        "description": "A vegetarian delight! Spaghetti noodles in a creamy garlic sauce, topped with sautéed soya pieces and fresh herbs."
+      }
+    ]
+  },
+  {
+    "name": "Bossman Restaurant",
+    "logo": "./images/pizza.png",
+    "Menu": [
+      {
+        "image": "./images/burger.png",
+        "name": "Classic Cheeseburger",
+        "price": "MWK2,500",
+        "description": "A classic burger with a juicy beef patty, cheddar cheese, lettuce, tomatoes, and our special sauce on a sesame seed bun."
+      },
+      {
+        "image": "./images/pizza.png",
+        "name": "Pepperoni Pizza",
+        "price": "MWK4,500",
+        "description": "A classic pizza topped with spicy pepperoni slices, tomato sauce, and mozzarella cheese on our homemade thin crust."
+      },
+      {
+        "image": "./images/spaghetti-meat-balls.png",
+        "name": "Spaghetti Bolognese",
+        "price": "MWK3,500",
+        "description": "A hearty dish featuring spaghetti noodles tossed in a rich meat sauce made with ground beef, tomatoes, and Italian herbs."
+      },
+      {
+        "image": "./images/spaghetti-soya.png",
+        "name": "Vegetable Spaghetti",
+        "price": "MWK3,500",
+        "description": "Spaghetti noodles tossed with a medley of fresh vegetables like bell peppers, zucchini, and mushrooms in a light garlic sauce."
+      }
+    ]
+  },
+  {
+    "name": "Sizzlers Bistro",
+    "logo": "./images/pizza.png",
+    "Menu": [
+      {
+        "image": "./images/burger.png",
+        "name": "Bacon Cheeseburger",
+        "price": "MWK3,000",
+        "description": "A juicy beef patty topped with crispy bacon, melted cheddar cheese, lettuce, tomatoes, and our signature sauce on a toasted brioche bun."
+      },
+      {
+        "image": "./images/pizza.png",
+        "name": "Vegetarian Supreme Pizza",
+        "price": "MWK5,000",
+        "description": "A vegetarian's delight! This pizza is loaded with fresh vegetables like bell peppers, onions, mushrooms, and olives on a tomato sauce base."
+      },
+      {
+        "image": "./images/spaghetti-meat-balls.png",
+        "name": "Fettuccine Alfredo",
+        "price": "MWK4,000",
+        "description": "Fettuccine noodles tossed in a rich and creamy Alfredo sauce, topped with grated Parmesan cheese and fresh parsley."
+      },
+      {
+        "image": "./images/spaghetti-soya.png",
+        "name": "Thai Basil Noodles",
+        "price": "MWK3,800",
+        "description": "Rice noodles stir-fried with fresh basil, bell peppers, onions, and your choice of protein (chicken or soya) in a savory Thai sauce."
+      }
+    ]
+  }
+]

@@ -1,7 +1,8 @@
 [
   {
-    "name": "Akuzike Foods",
-    "logo": "./images/pizza.png",
+    "name": "Steers Chikanda",
+    "logo": "./images/steers-chikanda-logo.png",
+    "location": "Chikanda - Near Matiya",
     "Menu": [
       {
         "image": "./images/burger.png",
@@ -32,6 +33,7 @@
   {
     "name": "Bossman Restaurant",
     "logo": "./images/pizza.png",
+    "location": "Chikanda - Near Matiya",
     "Menu": [
       {
         "image": "./images/burger.png",
@@ -62,6 +64,7 @@
   {
     "name": "Sizzlers Bistro",
     "logo": "./images/pizza.png",
+    "location": "Chikanda - Near Matiya",
     "Menu": [
       {
         "image": "./images/burger.png",

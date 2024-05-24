@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
-import img from './images/img.png';
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import img from './images/pizza.png';
+import { Link } from "react-router-dom";
 
 
 //helper function for the open/close sign according to time of the day
@@ -65,12 +65,11 @@ function RestaurantCard(props) {
                     </div>
                 </div>
             </div>
-            <button className="w-full border-white p-4 text-white bg-orange-600 rounded-lg">
-
-
-                <Link to="/Menu">View Menu</Link>
-
-            </button>
+            <Link to="/Menu">
+                <button className="w-full border-white p-4 text-white bg-orange-600 rounded-lg">
+                    View Menu
+                </button>
+            </Link>
         </div>
     </>;
 }
@@ -85,26 +84,28 @@ function Message() {
 
 //main component to render the cards and messages
 function Restaurants() {
-    return <div className="bg-gray-50 ">
+    return <>
+        <div className="bg-gray-50 ">
+            <Navbar></Navbar>
 
-        <Navbar></Navbar>
-        <Message />
-        <div className="flex h-full pl-60 pr-60 pt-5 justify-around">
-            <RestaurantCard name={"Bossman Restaurant"} location={"Chikanda - Near Matiya"}></RestaurantCard>
-            <RestaurantCard name={"Akuzike Foods"} location={"Chikanda - Near Matiya"} />
-            <RestaurantCard name={"Steers Chikanda"} location={"Chikanda - Near Matiya"} />
-        </div>
-        <div className="flex h-full pl-60 pr-60 pt-5 justify-around">
-            <RestaurantCard name={"ChiefChef Delicacy"} location={"Chikanda - Near Matiya"} />
-            <RestaurantCard name={"Undercroft Cafe"} location={"Chikanda - Near Matiya"} />
-            <RestaurantCard name={"Aunt Nina Cafe"} location={"Chikanda - Near Matiya"} />
-        </div>
-        <div className="flex h-full pl-60 pr-60 pt-5 pb-20 justify-around">
-            <RestaurantCard name={"Makawa Restaurant"} location={"Chikanda - Near Matiya"} />
-            <RestaurantCard name={"UNIMA Food Haven"} location={"Chikanda - Near Matiya"} />
-            <RestaurantCard name={"UNIMA H/Eco Cafe"} location={"Chikanda - Near Matiya"} />
-        </div>
-    </div>;
+            <Message />
+            <div className="flex h-full pl-60 pr-60 pt-5 justify-around">
+                <RestaurantCard name={"Bossman Restaurant"} location={"Chikanda - Near Matiya"}></RestaurantCard>
+                <RestaurantCard name={"Akuzike Foods"} location={"Chikanda - Near Matiya"} />
+                <RestaurantCard name={"Steers Chikanda"} location={"Chikanda - Near Matiya"} />
+            </div>
+            <div className="flex h-full pl-60 pr-60 pt-5 justify-around">
+                <RestaurantCard name={"ChiefChef Delicacy"} location={"Chikanda - Near Matiya"} />
+                <RestaurantCard name={"Undercroft Cafe"} location={"Chikanda - Near Matiya"} />
+                <RestaurantCard name={"Aunt Nina Cafe"} location={"Chikanda - Near Matiya"} />
+            </div>
+            <div className="flex h-full pl-60 pr-60 pt-5 pb-20 justify-around">
+                <RestaurantCard name={"Makawa Restaurant"} location={"Chikanda - Near Matiya"} />
+                <RestaurantCard name={"UNIMA Food Haven"} location={"Chikanda - Near Matiya"} />
+                <RestaurantCard name={"UNIMA H/Eco Cafe"} location={"Chikanda - Near Matiya"} />
+            </div>
+        </div>;
+    </>
 }
 
 export default Restaurants;

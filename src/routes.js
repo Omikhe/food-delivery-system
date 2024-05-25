@@ -6,7 +6,7 @@ import Restraunts from "./components/Restaurants.js";
 import About from "./components/About.js";
 import Checkout from "./components/checkout.js";
 import Menu from "./components/menu.js";
-
+import Delivery from "./components/Delivery.js";
 
 // Define the routes
 const router = createBrowserRouter([
@@ -41,7 +41,11 @@ const router = createBrowserRouter([
   {
     path: "/Menu",
     element: <Menu />
-  }
+  },
+  {
+    path: "/Delivery",
+    element: <Delivery />
+  },
 ]);
 
 export default router;

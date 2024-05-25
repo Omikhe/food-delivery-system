@@ -1,7 +1,7 @@
 import NavBar from "./Navbar";
 import { Link } from "react-router-dom";
-import { MdOutlineArrowBackIos } from "react-icons/md";
-import { BiSolidBank } from "react-icons/bi";
+import { MdOutlineArrowBackIos } from "react-icons";
+import { BiSolidBank } from "react-icons";
 import food from "./images/burger.png";
 
 
@@ -17,7 +17,7 @@ const Delivery = () => {
         <>
             <NavBar />
             {/* div supposed to be linked to previous page*/}
-            <Link to="/checkout" className="">
+            <Link to="/Payment" className="">
                 <p className="px-60 mb-1.5 font-bold flex text-3xl items-center">
                     <MdOutlineArrowBackIos className="mr-1 h-6 text-3xl" />
                     Back
@@ -29,7 +29,7 @@ const Delivery = () => {
 
                         <img
                             src={food}
-                            alt="payImage"
+                            alt="Chirunga"
                             className="h-96 rounded-lg"
                         />
                     </div>
@@ -39,7 +39,7 @@ const Delivery = () => {
                         <p className="font-bold mb-5 text-4xl">Choose Delivery method</p>
                         <form onSubmit={(e => handleSubmit(e))}>
                             <div className="mb-3 flex items-center">
-                                <input type="radio" name="pay-method" checked="true" />
+                                <input type="radio" name="delivery-method" checked="true" />
                                 <BiSolidBank className="bg-black h-6 w-6 text-white ml-3 mr-2 text-sm rounded" />
                                 <label className="font-normal ml-1">
                                     Home Delivery
@@ -47,7 +47,7 @@ const Delivery = () => {
                             </div>
                             <hr className="font-semibold mb-2 mx-3" />
                             <div className="mb-5 flex items-center">
-                                <input type="radio" name="pay-method" />
+                                <input type="radio" name="delivery-method" />
                                 <BiSolidBank className="bg-black h-5 w-5 text-white ml-3 mr-2 rounded" />
                                 <label className="font-normal ml-1">
                                     Pick up

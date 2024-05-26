@@ -7,6 +7,7 @@ import About from "./components/About.js";
 import Checkout from "./components/checkout.js";
 import Menu from "./components/menu.js";
 import Delivery from "./components/Delivery.js";
+import Signup from "./components/Signup.js";
 
 // Define the routes
 const router = createBrowserRouter([
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
     element: <Menu />
   },
   {
+    path: "/Signup",
+    element: <Signup/>
+  },
+  }
     path: "/Delivery",
     element: <Delivery />
   },

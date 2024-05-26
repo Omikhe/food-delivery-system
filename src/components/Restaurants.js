@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-import img from './images/pizza.png';
+import restaurantsData from './Restaurants.json';
 import { Link } from "react-router-dom";
 
 
@@ -49,63 +49,77 @@ function OpenClose() {
     }
 }
 
-function RestaurantCard(props) {
-    return <>
-        <div className="w-1/3 mr-5 bg-gray-200  text-black p-10 text-xl rounded-lg">
 
-            <div className="flex mb-5">
-                <div className="w-28 h-28 rounded-lg">
-                    <img src={img} alt="restaurant logo" />
-                </div>
-                <div className="ml-5">
-                    <h1 className="font-semibold mb-3">{props.name}</h1>
-                    <h2 className="mb-3 text-sm text-gray-500">{props.location}</h2>
-                    <div className="flex items-center text-sm">
-                        <OpenClose></OpenClose>
+function RestaurantCard(props) {
+    return (
+        <>
+            <div className="w-1/3 mr-5 bg-gray-200 text-black p-10 text-xl rounded-lg">
+                <div className="flex mb-5">
+                    <div className="w-28 h-28 rounded-lg">
+                        <img src={require(`${props.logo}`)} alt="restaurant logo" className="rounded-lg" />
+                    </div>
+                    <div className="ml-5">
+                        <h1 className="font-semibold mb-3">{props.name}</h1>
+                        <h2 className="mb-3 text-sm text-gray-500">{props.location}</h2>
+                        <div className="flex items-center text-sm">
+                            <OpenClose />
+                        </div>
                     </div>
                 </div>
+                <Link to={`/Menu`} state={{ name: props.name, menu: props.menu, rlocation: props.location }}>
+                    <button className="w-full border-white p-4 text-white bg-orange-600 hover:bg-orange-500 rounded-lg">
+                        View Menu
+                    </button>
+                </Link>
             </div>
-            <Link to="/Menu">
-                <button className="w-full border-white p-4 text-white bg-orange-600 rounded-lg">
-                    View Menu
-                </button>
-            </Link>
-        </div>
-    </>;
+        </>
+    );
 }
 
-
-//component to dislpay CTA message
 function Message() {
-    return <>
-        <h1 className="h-10 pl-60 pr-60 pt-5 pb-20 text-bold text-5xl font-bold">Choose your restaurant</h1>
-    </>;
+    return (
+        <>
+            <h1 className="h-10 pl-60 pr-60 pt-5 pb-20 text-bold text-5xl font-bold">Choose your restaurant</h1>
+        </>
+    );
 }
 
-//main component to render the cards and messages
 function Restaurants() {
-    return <>
-        <div className="bg-gray-50 ">
-            <Navbar></Navbar>
+    const renderRestaurantCards = () => {
+        const rows = [];
+        const numRows = Math.ceil(restaurantsData.length / 3);
 
-            <Message />
-            <div className="flex h-full pl-60 pr-60 pt-5 justify-around">
-                <RestaurantCard name={"Bossman Restaurant"} location={"Chikanda - Near Matiya"}></RestaurantCard>
-                <RestaurantCard name={"Akuzike Foods"} location={"Chikanda - Near Matiya"} />
-                <RestaurantCard name={"Steers Chikanda"} location={"Chikanda - Near Matiya"} />
+        for (let i = 0; i < numRows; i++) {
+            const rowCards = restaurantsData.slice(i * 3, i * 3 + 3).map((restaurant, index) => (
+                <RestaurantCard
+                    key={index}
+                    name={restaurant.name}
+                    location={restaurant.location}
+                    logo={restaurant.logo}
+                    menu={restaurant.Menu}
+                />
+            ));
+
+            rows.push(
+                <div key={i} className="flex h-full pl-60 pr-60 pt-5 justify-around">
+                    {rowCards}
+                </div>
+            );
+        }
+
+        return rows;
+    };
+
+    return (
+        <>
+            <div >
+                <Navbar />
+                <Message />
+                {renderRestaurantCards()}
             </div>
-            <div className="flex h-full pl-60 pr-60 pt-5 justify-around">
-                <RestaurantCard name={"ChiefChef Delicacy"} location={"Chikanda - Near Matiya"} />
-                <RestaurantCard name={"Undercroft Cafe"} location={"Chikanda - Near Matiya"} />
-                <RestaurantCard name={"Aunt Nina Cafe"} location={"Chikanda - Near Matiya"} />
-            </div>
-            <div className="flex h-full pl-60 pr-60 pt-5 pb-20 justify-around">
-                <RestaurantCard name={"Makawa Restaurant"} location={"Chikanda - Near Matiya"} />
-                <RestaurantCard name={"UNIMA Food Haven"} location={"Chikanda - Near Matiya"} />
-                <RestaurantCard name={"UNIMA H/Eco Cafe"} location={"Chikanda - Near Matiya"} />
-            </div>
-        </div>;
-    </>
+        </>
+    );
 }
 
 export default Restaurants;
+export { OpenClose };

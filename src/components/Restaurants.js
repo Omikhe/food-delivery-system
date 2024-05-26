@@ -67,7 +67,7 @@ function RestaurantCard(props) {
                     </div>
                 </div>
                 <Link to={`/Menu`} state={{ name: props.name, menu: props.menu, rlocation: props.location }}>
-                    <button className="w-full border-white p-4 text-white bg-orange-600 rounded-lg">
+                    <button className="w-full border-white p-4 text-white bg-orange-600 hover:bg-orange-500 rounded-lg">
                         View Menu
                     </button>
                 </Link>
@@ -122,3 +122,4 @@ function Restaurants() {
 }
 
 export default Restaurants;
+export { OpenClose };

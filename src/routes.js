@@ -45,12 +45,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/Signup",
-    element: <Signup/>
+    element: <Signup />
   },
-  }
+  {
     path: "/Delivery",
     element: <Delivery />
-  },
+  }
 ]);
 
 export default router;

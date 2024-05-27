@@ -23,7 +23,7 @@ function Navbar() {
                         </ul>
                         <div className="ml-5">
 
-                            <Link to="#">
+                            <Link to="/Signup">
                                 <button className="px-5 py-2.5 border-2 border-gray-800 text-xl text-black ml-5 bg-transparent rounded-lg">
                                     Sign Up
                                 </button>

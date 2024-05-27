@@ -3,13 +3,27 @@ import { Link, useLocation } from "react-router-dom";
 import { MdOutlineArrowBackIos } from "react-icons/md";
 import { BiSolidBank } from "react-icons/bi";
 
-
+const handleButtonClick = () => {
+    fetch('https://ntfy.sh/omikhe', {
+        method: 'POST',
+        body: 'Your order is on the way!',
+        headers: {
+            'Title': 'Chirunga Munchies',
+            'Priority': 'urgent'
+        }
+    })
+        .then((response) => {
+            console.log('Notification sent successfully');
+        })
+        .catch((error) => {
+            console.error('Error sending notification:', error);
+        });
+};
 
 const Delivery = () => {
 
     function handleSubmit(e) {
         e.preventDefault();
-        //handling payment submission code
     }
 
     const location = useLocation();
@@ -18,7 +32,7 @@ const Delivery = () => {
         <>
             <NavBar />
             {/* div supposed to be linked to previous page*/}
-            <Link to="/pay" state={{ image: location.state.image }} className="">
+            <Link to="/pay" state={{ name: location.state.name, image: location.state.image, price: location.state.price, description: location.state.description }} className="">
                 <p className="px-60 mb-1.5 font-bold flex text-3xl items-center">
                     <MdOutlineArrowBackIos className="mr-1 h-6 text-3xl" />
                     Back
@@ -37,7 +51,7 @@ const Delivery = () => {
 
                     <div className="flex-column pr-1 min-w-16 mr-40">
 
-                        <p className="font-bold mb-5 text-4xl">Choose Delivery method</p>
+                        <p className="font-bold mb-5 text-4xl">Choose Delivery Method</p>
                         <form onSubmit={(e => handleSubmit(e))}>
                             <div className="mb-3 flex items-center">
                                 <input type="radio" name="pay-method" checked="true" />
@@ -54,7 +68,7 @@ const Delivery = () => {
                                     Pick up
                                 </label>
                             </div>
-                            <button className="bg-orange-600 py-4 px-20 text-white mt-5  rounded font-medium text-2xl">
+                            <button onClick={handleButtonClick} className="bg-orange-600 py-4 px-20 text-white mt-5  rounded font-medium text-2xl">
                                 Proceed
                             </button>
                         </form>

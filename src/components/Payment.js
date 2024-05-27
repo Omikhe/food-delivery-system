@@ -1,23 +1,25 @@
 import NavBar from "./Navbar";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { MdOutlineArrowBackIos } from "react-icons/md";
 import { BiSolidBank } from "react-icons/bi";
-import food from "./images/burger.png";
 
 
 
 const Payment = () => {
+
+    const location = useLocation();
 
     function handleSubmit(e) {
         e.preventDefault();
         //handling payment submission code
     }
 
+
     return (
         <>
             <NavBar />
             {/* div supposed to be linked to previous page*/}
-            <Link to="/checkout" className="">
+            <Link to="/Checkout" state={{ name: location.state.name, image: location.state.image, price: location.state.price, description: location.state.description }} className="">
                 <p className="px-60 mb-1.5 font-bold flex text-3xl items-center">
                     <MdOutlineArrowBackIos className="mr-1 h-6 text-3xl" />
                     Back
@@ -28,7 +30,7 @@ const Payment = () => {
                     <div className="h-96">
 
                         <img
-                            src={food}
+                            src={require(`${location.state.image}`)}
                             alt="payImage"
                             className="h-96 rounded-lg"
                         />
@@ -36,7 +38,7 @@ const Payment = () => {
 
                     <div className="flex-column pr-1 min-w-16 mr-40">
 
-                        <p className="font-bold mb-5 text-4xl">Choose payment method</p>
+                        <p className="font-bold mb-5 text-4xl">Choose Payment Method</p>
                         <form onSubmit={(e => handleSubmit(e))}>
                             <div className="mb-3 flex items-center">
                                 <input type="radio" name="pay-method" checked="true" />
@@ -53,9 +55,11 @@ const Payment = () => {
                                     Airtel money
                                 </label>
                             </div>
-                            <button className="bg-orange-600 py-4 px-20 text-white mt-5  rounded font-medium text-2xl">
-                                Proceed
-                            </button>
+                            <Link to="/Delivery" state={{ name: location.state.name, image: location.state.image, price: location.state.price, description: location.state.description }}>
+                                <button className="bg-orange-600 py-4 px-20 text-white mt-5  rounded font-medium text-2xl">
+                                    Proceed
+                                </button>
+                            </Link>
                         </form>
 
                     </div>

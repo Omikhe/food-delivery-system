@@ -1,9 +1,6 @@
 import NavBar from "./Navbar";
 import { MdOutlineArrowBackIos } from "react-icons/md";
 import { Link, useLocation } from "react-router-dom";
-import { BiSolidBank } from "react-icons/bi";
-import food from "./images/burger.png";
-
 
 
 const Checkout = () => {
@@ -12,7 +9,7 @@ const Checkout = () => {
         <>
             <NavBar />
             {/* div supposed to be linked to previous page*/}
-            <Link to="/checkout" className="">
+            <Link to="/Menu" state={{ name: location.state.name, image: location.state.image, price: location.state.price, description: location.state.description }} className="">
                 <p className="px-60 mb-1.5 font-bold flex text-3xl items-center">
                     <MdOutlineArrowBackIos className="mr-1 h-6 text-3xl" />
                     Back
@@ -23,7 +20,7 @@ const Checkout = () => {
                     <div className="h-96">
                         <img
                             src={require(`${location.state.image}`)}
-                            alt="payImage"
+                            alt="meal"
                             className="h-96 rounded-lg"
                         />
                     </div>
@@ -38,7 +35,7 @@ const Checkout = () => {
                                     {location.state.description}
                                 </p>
                             </div>
-                            <Link to="/Pay" state={{ image: location.state.image, name: location.state.name }}>
+                            <Link to="/Pay" state={{ name: location.state.name, image: location.state.image, price: location.state.price, description: location.state.description }}>
                                 <button className="bg-orange-600 py-4 px-20 text-white mt-5  rounded font-medium text-2xl">
                                     Proceed
                                 </button>

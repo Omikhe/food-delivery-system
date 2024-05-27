@@ -32,7 +32,7 @@ function CallToAction() {
   );
 }
 
-function MenuItem({ image, name, price }) {
+function MenuItem({ image, name, price, description }) {
   return (
     <div className="flex flex-col w-64 h-80 mr-8 p-6 justify-between items-center bg-gray-200 text-black text-xl rounded-2xl">
       <div className="w-full h-full rounded-3xl p-0 mb-1 overflow-hidden bg-transparent">
@@ -42,7 +42,7 @@ function MenuItem({ image, name, price }) {
         <h2 className="font-bold text-base">{name}</h2>
         <p className="text-center">{price}</p>
       </div>
-      <Link to="/Checkout" className="w-full">
+      <Link to="/Checkout" state={{ name: name, image: image, price: price, description: description }} className="w-full">
         <button className="w-full p-2 bg-orange-600 hover:bg-orange-500 text-white rounded-md">
           Order
         </button>
@@ -80,6 +80,9 @@ function Menu() {
           image={item.image}
           name={item.name}
           price={item.price}
+          description={item.description}
+          logo={item.logo}
+          location={item.location}
         />
       ));
 

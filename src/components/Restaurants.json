@@ -1,8 +1,8 @@
 [
  {
-   "name": "Steers Chikanda",
+   "name": "Steers Chichiri",
    "logo": "./images/steers-chikanda-logo.png",
-   "location": "Chikanda • Near Matiya",
+   "location": "Chichiri • Near MUBAS",
    "Menu": [
      {
        "image": "./images/burger.png",
@@ -33,7 +33,7 @@
  {
    "name": "Bossman Restaurant",
    "logo": "./images/bossman-restaurant-logo.png",
-   "location": "Chikanda • Near Matiya",
+   "location": "Chitawira • Near Bakery",
    "Menu": [
      {
        "image": "./images/burger.png",
@@ -64,7 +64,7 @@
  {
    "name": "ChiefChef Restaurant",
    "logo": "./images/chief-chef-logo.png",
-   "location": "Chikanda • Near Matiya",
+   "location": "Manja • Near Soche Secondary School",
    "Menu": [
      {
        "image": "./images/burger.png",
@@ -95,7 +95,7 @@
  {
    "name": "Akuzike Restaurant",
    "logo": "./images/akuzike-restaurant-logo.png",
-   "location": "Chikanda • Near Matiya",
+   "location": "Chitawira • Near Robins Park",
    "Menu": [
      {
        "image": "./images/burger.png",
@@ -126,7 +126,7 @@
  {
    "name": "Revel Cooking",
    "logo": "./images/revel-cooking-logo.png",
-   "location": "Chikanda • Near Matiya",
+   "location": "Kanjeza • Near Masm",
    "Menu": [
      {
        "image": "./images/burger.png",
@@ -157,7 +157,7 @@
   {
     "name": "Hot Grill Cafe",
     "logo": "./images/hot-grill-cafe.png",
-    "location": "Chikanda • Near Matiya",
+    "location": "Mandala • Near Cherrywood Estate",
     "Menu": [
       {
         "image": "./images/burger.png",

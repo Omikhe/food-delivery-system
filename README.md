@@ -11,8 +11,8 @@ Chirunga Munchies is a web application that facilitates food ordering and delive
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/[your-username]/chirunga-munchies.git
-   cd chirunga-munchies
+   git clone git@github.com:Omikhe/food-delivery-system.git
+   cd food-delivery-system
    ```
 
 2. **Install dependencies**

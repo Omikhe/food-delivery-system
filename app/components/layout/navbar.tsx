@@ -39,9 +39,9 @@ export default function Pagez() {
 
             {/* Sliding Navigation */}
             <div
-                className={`fixed top-0 right-0 h-screen w-1/2 bg-slate-400 transform transition-transform duration-300 ease-in-out 
+                className={`fixed top-0 right-0 h-screen w-1/2 bg-[#F6F5FA]/50  transform transition-transform duration-300 ease-in-out 
         ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
-         shadow-lg z-50 backdrop-blur-sm`}
+         shadow-lg z-50 backdrop-blur-lg`}
             >
                 <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="pl-[137px] pr-[38px] pt-[16px]">
                     <XMarkIcon

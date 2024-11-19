@@ -1,4 +1,5 @@
 import Navbar from "./components/layout/navbar"
+import Image from "next/image";
 export default function Home() {
   return (
     <>
@@ -16,6 +17,12 @@ export default function Home() {
             Order Now
           </button>
         </div>
+        <Image
+          src="/hero-image.png"
+          width={246}
+          height={246}
+          alt="a top shot of food in a plate"
+        />
       </div>
     </>
   );

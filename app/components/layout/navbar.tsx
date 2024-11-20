@@ -96,7 +96,9 @@ export default function Navbar() {
                             <Link
                                 key={item.title}
                                 href={item.href}
-                                className="font-semibold text-base text-gray-900 active:text-orange-500 @hover:text-orange-500 transition-colors"
+                                className={clsx("font-semibold text-base text-gray-900 active:text-orange-500 @hover:text-orange-500 transition-colors", {
+                                    "text-orange-500": pathname === item.href,
+                                },)}
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {item.title}

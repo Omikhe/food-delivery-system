@@ -1,4 +1,5 @@
-import MealCard from "../components/meal-card";
+import MealCard from "../../components/restaurant-card"
+
 
 
 export default function Page() {

@@ -10,8 +10,8 @@ export default function Page() {
                     <div className="lg:flex lg:w-[257.63px] lg:h-[73.13px] lg:mb-[20px]">
                         <div className="lg:w-[81.02px] lg:h-[73.13px] lg:bg-[#BCBDC1] lg:mr-[17px] lg:rounded-[5px]" ></div>
                         <div>
-                            <h1 className="lg:font-semibold lg:text-[15px]">Bossman Restaurant</h1>
-                            <h2 className="lg:font-normal lg:text-[10px] lg:text-[#BCBDC1]">Chikanda • Near Bridge</h2>
+                            <h1 className="lg:font-semibold lg:text-[15px] lg:mb-1">Bossman Restaurant</h1>
+                            <h2 className="lg:font-normal lg:text-[10px] lg:text-[#BCBDC1] lg:mb-1">Chikanda • Near Bridge</h2>
                             <div className="lg:flex lg:items-center">
                                 <div className="lg:w-[5px] lg:h-[5px] lg:rounded-full lg:bg-[#27AE61]  mr-1"></div>
                                 <h2 className="lg:text-[#27AE61] lg:font-medium lg:text-[10px]">Open</h2>

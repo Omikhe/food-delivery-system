@@ -3,12 +3,17 @@ import Image from "next/image";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from 'next/navigation';
+import clsx from 'clsx';
+
+
 
 export default function Navbar() {
+    const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const navItems = [
-        { title: "Home", href: "#" },
+        { title: "Home", href: "/" },
         { title: "Profile", href: "#" },
         { title: "Restaurants", href: "#" },
         { title: "Order History", href: "#" }
@@ -19,11 +24,11 @@ export default function Navbar() {
             {/* Top header */}
             <div className="flex justify-between items-center py-6 px-5 max-w-7xl mx-auto w-full">
                 <Image
-                    src="/logo.png"
+                    src="/logo.svg"
                     width={111}
                     height={37}
                     alt="chirunga munchies orange logo"
-                    className="lg:w-[113px] lg:h-[38px]"
+                    className="lg:w-56"
                 />
 
                 {/* Desktop Navigation */}
@@ -32,7 +37,9 @@ export default function Navbar() {
                         <Link
                             key={item.title}
                             href={item.href}
-                            className="font-normal lg:text-xl text-gray-900 hover:text-orange-500 transition-colors"
+                            className={clsx("font-normal lg:text-xl text-gray-900 hover:text-orange-500 transition-colors", {
+                                "text-orange-500": pathname === item.href,
+                            },)}
                         >
                             {item.title}
                         </Link>

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,20 +23,23 @@ export default function Navbar() {
                     width={111}
                     height={37}
                     alt="chirunga munchies orange logo"
-                    className="w-28 h-auto"
+                    className="lg:w-[113px] lg:h-[38px]"
                 />
 
                 {/* Desktop Navigation */}
                 <nav className="hidden lg:flex items-center space-x-8">
                     {navItems.map((item) => (
-                        <a
+                        <Link
                             key={item.title}
                             href={item.href}
-                            className="font-semibold text-base text-gray-900 hover:text-orange-500 transition-colors"
+                            className="font-normal lg:text-xl text-gray-900 hover:text-orange-500 transition-colors"
                         >
                             {item.title}
-                        </a>
+                        </Link>
                     ))}
+                    <button className="lg:w-[92px] lg:h-[39px] lg:rounded-[5px] lg:border-[1px] lg:border-gray-900 lg:hover:bg-gray-900 hover:lg:text-white lg:transition-all">Sign Up</button>
+                    <button className="lg:w-[92px] lg:h-[39px] lg:rounded-[5px] lg:text-white lg:bg-gray-900 hover:bg-slate-800 lg:transition-colors">Log In</button>
+
                 </nav>
 
                 {/* Mobile Menu Button */}
@@ -82,14 +86,14 @@ export default function Navbar() {
                 <nav className="px-8 pt-8">
                     <div className="flex flex-col space-y-8">
                         {navItems.map((item) => (
-                            <a
+                            <Link
                                 key={item.title}
                                 href={item.href}
-                                className="font-semibold text-base text-gray-900 hover:text-orange-500 transition-colors"
+                                className="font-semibold text-base text-gray-900 active:text-orange-500 @hover:text-orange-500 transition-colors"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {item.title}
-                            </a>
+                            </Link>
                         ))}
                     </div>
                 </nav>

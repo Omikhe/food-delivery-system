@@ -20,16 +20,18 @@ export default function Navbar() {
     ];
 
     return (
-        <main className="flex flex-col sticky top-0 z-50 md:bg-white/15 md:backdrop-blur-lg">
+        <main className="flex flex-col sticky top-0 lg:z-50 bg-white lg:bg-white/15 lg:backdrop-blur-lg">
             {/* Top header */}
             <div className="flex justify-between items-center py-6 px-5 max-w-7xl mx-auto w-full">
-                <Image
-                    src="/logo.svg"
-                    width={111}
-                    height={37}
-                    alt="chirunga munchies orange logo"
-                    className="lg:w-56"
-                />
+                <Link href={navItems[0].href}>
+                    <Image
+                        src="/logo.svg"
+                        width={111}
+                        height={37}
+                        alt="chirunga munchies orange logo"
+                        className="lg:w-56"
+                    />
+                </Link>
 
                 {/* Desktop Navigation */}
                 <nav className="hidden lg:flex items-center space-x-8 ">

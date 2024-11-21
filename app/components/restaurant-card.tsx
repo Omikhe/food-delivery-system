@@ -1,9 +1,18 @@
 import Link from "next/link";
+import Image from "next/image";
+
 export default function RestaurantCard() {
     return (
         <div className="flex flex-col w-[460px] h-[272px] bg-[#F6F5FA] justify-center items-start p-10 rounded-[5px] text-xl">
             <div className="flex w-[380px] h-[112px] mb-[20px]">
-                <div className="w-[112px] h-[112px] bg-[#BCBDC1] mr-[17px] rounded-[5px]"></div>
+                <div className="w-[112px] h-[112px] bg-[#BCBDC1] mr-[17px] rounded-[5px] overflow-hidden">
+                    <Image
+                        src={"/bossman-restaurant-logo.png"}
+                        alt="logo"
+                        width={1132}
+                        height={1132}
+                    />
+                </div>
                 <div className="">
                     <h1 className="font-semibold mb-3">Bossman Restaurant</h1>
                     <h2 className="mb-3 text-sm text-gray-500">Chikanda • Near Bridge</h2>

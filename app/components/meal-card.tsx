@@ -1,11 +1,17 @@
 import Link from "next/link";
+import Image from "next/image";
 
 
 export default function MealCard() {
     return (
-        <div className="flex flex-col w-64 h-80 mr-8 p-6 justify-between items-center bg-gray-200 text-black text-xl rounded-2xl">
-            <div className="w-full h-full rounded-3xl p-0 mb-1 overflow-hidden bg-transparent">
-
+        <div className="flex flex-col w-64 h-80 p-6 justify-between items-center bg-[#F6F5FA] text-black text-xl rounded-2xl">
+            <div className="flex items-center justify-center w-full h-full rounded-3xl p-0 mb-1 overflow-hidden bg-transparent">
+                <Image
+                    src={"/burger.png"}
+                    alt="logo"
+                    width={1132}
+                    height={1132}
+                />
             </div>
 
             <div className="flex flex-col items-center mb-2 mt-0">

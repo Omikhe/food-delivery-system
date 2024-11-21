@@ -29,6 +29,58 @@ export default function Page() {
                         <RestaurantCard />
                     </div>
 
+                    <div className="mb-[16px] lg:mb-[18px] lg:break-inside-avoid">
+                        <RestaurantCard />
+                    </div>
+
+                    <div className="mb-[16px] lg:mb-[18px] lg:break-inside-avoid">
+                        <RestaurantCard />
+                    </div>
+
+                    <div className="mb-[16px] lg:mb-[18px] lg:break-inside-avoid">
+                        <RestaurantCard />
+                    </div>
+
+                    <div className="mb-[16px] lg:mb-[18px] lg:break-inside-avoid">
+                        <RestaurantCard />
+                    </div>
+
+                    <div className="mb-[16px] lg:mb-[18px] lg:break-inside-avoid">
+                        <RestaurantCard />
+                    </div>
+
+                    <div className="mb-[16px] lg:mb-[18px] lg:break-inside-avoid">
+                        <RestaurantCard />
+                    </div>
+
+                    <div className="mb-[16px] lg:mb-[18px] lg:break-inside-avoid">
+                        <RestaurantCard />
+                    </div>
+
+                    <div className="mb-[16px] lg:mb-[18px] lg:break-inside-avoid">
+                        <RestaurantCard />
+                    </div>
+
+                    <div className="mb-[16px] lg:mb-[18px] lg:break-inside-avoid">
+                        <RestaurantCard />
+                    </div>
+
+                    <div className="mb-[16px] lg:mb-[18px] lg:break-inside-avoid">
+                        <RestaurantCard />
+                    </div>
+
+                    <div className="mb-[16px] lg:mb-[18px] lg:break-inside-avoid">
+                        <RestaurantCard />
+                    </div>
+
+                    <div className="mb-[16px] lg:mb-[18px] lg:break-inside-avoid">
+                        <RestaurantCard />
+                    </div>
+
+                    <div className="mb-[16px] lg:mb-[18px] lg:break-inside-avoid">
+                        <RestaurantCard />
+                    </div>
+
 
                 </div>
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function RestaurantCard() {
     return (
         <div className="flex flex-col w-[460px] h-[272px] bg-[#F6F5FA] justify-center items-start p-10 rounded-[5px] text-xl">
@@ -12,9 +13,9 @@ export default function RestaurantCard() {
                     </div>
                 </div>
             </div>
-            <button className="w-full border-white p-4 text-white bg-[#FF6C44] hover:bg-orange-500 rounded-lg">
+            <Link href={"/restaurants/menu"} className="w-full border-white p-4 text-white bg-[#FF6C44] hover:bg-orange-500 rounded-lg text-center">
                 View Menu
-            </button>
+            </Link>
         </div>
     );
 }

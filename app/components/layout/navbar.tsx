@@ -46,8 +46,8 @@ export default function Navbar() {
                             {item.title}
                         </Link>
                     ))}
-                    <button className="lg:w-[92px] lg:h-[39px] lg:rounded-[5px] lg:border-[1px] lg:border-gray-900 lg:hover:bg-gray-900 hover:lg:text-white lg:transition-all">Sign Up</button>
-                    <button className="lg:w-[92px] lg:h-[39px] lg:rounded-[5px] lg:text-white lg:bg-gray-900 hover:bg-slate-800 lg:transition-colors">Log In</button>
+                    <Link href={"#"} className="lg:flex lg:justify-center lg:items-center lg:text-center lg:w-[92px] lg:h-[39px] lg:rounded-[5px] lg:border-[1px] lg:border-gray-900 lg:hover:bg-gray-900 hover:lg:text-white lg:transition-all">Sign Up</Link>
+                    <Link href={"/login"} className="lg:flex lg:justify-center lg:items-center lg:text-center lg:w-[92px] lg:h-[39px] lg:rounded-[5px] lg:text-white lg:bg-gray-900 hover:bg-slate-800 lg:transition-colors">Log In</Link>
 
                 </nav>
 

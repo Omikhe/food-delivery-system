@@ -13,7 +13,7 @@ export default function MealCard() {
                 <p className="text-center">MWK2,500</p>
             </div>
 
-            <Link className="w-full" href="/Checkout">
+            <Link className="w-full" href="/">
                 <button className="w-full p-2 bg-[#FF6C44] hover:bg-orange-500 text-white rounded-md">Order</button>
             </Link>
         </div>

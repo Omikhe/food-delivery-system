@@ -4,8 +4,8 @@ import RestaurantSign from "@/app/components/restaurant-sign";
 
 function CallToAction() {
     return (
-        <div className="mt-20 mb-7 w-full">
-            <div className="w-[240px] h-[88px] text-[32px] mb-[16px] text-left font-bold lg:w-[600px] lg:text-[40px] lg:font-bold lg:mb-[4px]">Checkout our menu! 😋</div>
+        <div className="my-[25px]  lg:mt-20 lg:mb-7 w-full">
+            <div className="text-nowrap text-[16px] text-left font-bold lg:w-[600px] lg:text-[40px] lg:font-bold mb-[4px]">Checkout our menu! 😋</div>
             <hr className="border border-[#D9D9D9]"></hr>
         </div>
     );
@@ -19,7 +19,7 @@ export default function Page() {
             <div className="flex flex-col justify-between items-start py-6 px-5 max-w-7xl mx-auto w-full">
                 <RestaurantSign />
                 <CallToAction />
-                <div className="columns-1 lg:gap-[18px] lg:columns-4">
+                <div className="columns-2 lg:gap-[18px] lg:columns-4">
 
                     <div className="mb-[16px] lg:mb-[18px] lg:break-inside-avoid">
                         <MealCard />

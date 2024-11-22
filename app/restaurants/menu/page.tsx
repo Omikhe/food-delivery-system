@@ -19,7 +19,7 @@ export default function Page() {
             <div className="flex flex-col justify-between items-start py-6 px-5 max-w-7xl mx-auto w-full">
                 <RestaurantSign />
                 <CallToAction />
-                <div className="columns-1 lg:gap-[18px] lg:columns-4">
+                <div className="columns-2 lg:gap-[18px] lg:columns-4">
 
                     <div className="mb-[16px] lg:mb-[18px] lg:break-inside-avoid">
                         <MealCard />

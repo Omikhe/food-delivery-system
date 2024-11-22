@@ -13,6 +13,7 @@ export default function RestaurantCard() {
                         alt="logo"
                         width={1132}
                         height={1132}
+                        className="w-[82px] h-[74px]"
                     />
                 </div>
 

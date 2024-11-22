@@ -7,13 +7,12 @@ export default function RestaurantCard() {
 
             <div className="flex w-[257.63px] h-[73.13px] mb-[20px] lg:flex lg:w-[380px] lg:h-[112px] lg:mb-[20px]">
 
-                <div className="w-[81.02px] h-[73.13px] bg-[#BCBDC1] mr-[17px] rounded-[5px] lg:w-[112px] lg:h-[112px] lg:bg-[#BCBDC1] lg:mr-[17px] lg:rounded-[5px] overflow-hidden">
+                <div className="w-[81.02px] h-[73.13px] bg-[#BCBDC1] mr-[17px] rounded-[5px] lg:w-[112px] lg:h-[112px] lg:bg-[#BCBDC1] lg:mr-[17px] overflow-hidden">
                     <Image
                         src={"/logos/bossman-restaurant-logo.png"}
                         alt="logo"
                         width={1132}
                         height={1132}
-                        className="w-[82px] h-[74px]"
                     />
                 </div>
 
@@ -28,7 +27,7 @@ export default function RestaurantCard() {
 
             </div>
 
-            <Link href={"/restaurants/menu"} className="flex items-center justify-center w-[304px] h-[40px] rounded-[5px] text-[13px] lg:text-xl lg:w-full lg:h-[60px] p-4 text-white bg-[#FF6C44] hover:bg-orange-500 lg:rounded-lg text-center">
+            <Link href={"/restaurants/menu"} className="flex items-center justify-center w-[304px] h-[40px] rounded-[5px] text-[13px] lg:text-xl lg:w-full lg:h-[60px] p-4 text-white bg-[#FF6C44] hover:bg-orange-500 lg:rounded-lg text-center font-semibold">
                 <div>View Menu</div>
             </Link>
         </div>

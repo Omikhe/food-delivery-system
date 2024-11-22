@@ -22,7 +22,7 @@ export default function Home() {
           </Link>
         </div>
         <Image
-          src="/hero-image.png"
+          src="/meals/hero-image.png"
           width={246}
           height={246}
           alt="a top shot of food in a plate"

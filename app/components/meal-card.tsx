@@ -7,7 +7,7 @@ export default function MealCard() {
         <div className="flex flex-col w-64 h-80 p-6 justify-between items-center bg-[#F6F5FA] text-black text-xl rounded-2xl">
             <div className="flex items-center justify-center w-full h-full rounded-3xl p-0 mb-1 overflow-hidden bg-transparent">
                 <Image
-                    src={"/burger.png"}
+                    src={"/meals/burger.png"}
                     alt="logo"
                     width={1132}
                     height={1132}

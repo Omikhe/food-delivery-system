@@ -1,5 +1,7 @@
+import Link from "next/link";
 import Navbar from "./components/layout/navbar"
 import Image from "next/image";
+
 export default function Home() {
   return (
     <>
@@ -13,9 +15,11 @@ export default function Home() {
           <h2 className="text-[16px] mb-6 lg:mb-[39px]">
             Simplify Your Meals With <b>Chirunga Munchies</b> Food Delivery System
           </h2>
-          <button className="w-[109.53px] h-[45px] bg-[#FF6C44] text-[#ffffff] font-semibold rounded-[5px] lg:w-[129px] lg:h-[53px] lg:text-[18.28px] lg:hover:bg-[#ED5A32]">
-            Order Now
-          </button>
+          <Link href={"./restaurants/"}>
+            <button className="w-[109.53px] h-[45px] bg-[#FF6C44] text-[#ffffff] font-semibold rounded-[5px] lg:w-[129px] lg:h-[53px] lg:text-[18.28px] lg:hover:bg-[#ED5A32]">
+              Order Now
+            </button>
+          </Link>
         </div>
         <Image
           src="/hero-image.png"

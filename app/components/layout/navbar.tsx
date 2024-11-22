@@ -15,24 +15,26 @@ export default function Navbar() {
     const navItems = [
         { title: "Home", href: "/" },
         { title: "Profile", href: "#" },
-        { title: "Restaurants", href: "#" },
+        { title: "Restaurants", href: "/restaurants" },
         { title: "Order History", href: "#" }
     ];
 
     return (
-        <main className="flex flex-col relative">
+        <main className="flex flex-col sticky top-0 lg:z-50 bg-white lg:bg-white/15 lg:backdrop-blur-lg">
             {/* Top header */}
             <div className="flex justify-between items-center py-6 px-5 max-w-7xl mx-auto w-full">
-                <Image
-                    src="/logo.svg"
-                    width={111}
-                    height={37}
-                    alt="chirunga munchies orange logo"
-                    className="lg:w-56"
-                />
+                <Link href={navItems[0].href}>
+                    <Image
+                        src="/logo.svg"
+                        width={111}
+                        height={37}
+                        alt="chirunga munchies orange logo"
+                        className="lg:w-56"
+                    />
+                </Link>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden lg:flex items-center space-x-8">
+                <nav className="hidden lg:flex items-center space-x-8 ">
                     {navItems.map((item) => (
                         <Link
                             key={item.title}
@@ -44,8 +46,8 @@ export default function Navbar() {
                             {item.title}
                         </Link>
                     ))}
-                    <button className="lg:w-[92px] lg:h-[39px] lg:rounded-[5px] lg:border-[1px] lg:border-gray-900 lg:hover:bg-gray-900 hover:lg:text-white lg:transition-all">Sign Up</button>
-                    <button className="lg:w-[92px] lg:h-[39px] lg:rounded-[5px] lg:text-white lg:bg-gray-900 hover:bg-slate-800 lg:transition-colors">Log In</button>
+                    <Link href={"#"} className="lg:flex lg:justify-center lg:items-center lg:text-center lg:w-[92px] lg:h-[39px] lg:rounded-[5px] lg:border-[1px] lg:border-gray-900 lg:hover:bg-gray-900 hover:lg:text-white lg:transition-all">Sign Up</Link>
+                    <Link href={"/login"} className="lg:flex lg:justify-center lg:items-center lg:text-center lg:w-[92px] lg:h-[39px] lg:rounded-[5px] lg:text-white lg:bg-gray-900 hover:bg-slate-800 lg:transition-colors">Log In</Link>
 
                 </nav>
 

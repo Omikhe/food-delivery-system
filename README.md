@@ -18,21 +18,11 @@ Chirunga Munchies is a web application that facilitates food ordering and delive
 2. **Install dependencies**
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
-3. **Set up environment variables**
-   ```bash
-   cp .env.example .env.local
-   ```
-   Fill in the required environment variables.
-
-4. **Run the development server**
+3. **Run the development server**
    ```bash
    npm run dev
-   # or
-   yarn dev
    ```
 
-5. **Open [http://localhost:3000](http://localhost:3000) with your browser**
+4. **Open [http://localhost:3000](http://localhost:3000) with your browser**

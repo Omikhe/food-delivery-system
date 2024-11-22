@@ -4,9 +4,9 @@ import RestaurantSign from "@/app/components/restaurant-sign";
 
 function CallToAction() {
     return (
-        <div className="my-[25px]  lg:mt-20 lg:mb-7 w-full">
-            <div className="text-nowrap text-[16px] text-left font-bold lg:w-[600px] lg:text-[40px] lg:font-bold mb-[4px]">Checkout our menu! 😋</div>
-            <hr className="border border-[#D9D9D9]"></hr>
+        <div className="mt-20 mb-7 w-full">
+            <div className="w-[240px] h-[88px] text-[32px] mb-[16px] text-left font-bold lg:w-[600px] lg:text-[40px] lg:font-bold lg:mb-[4px]">Checkout our menu! 😋</div>
+            <hr className="border border-[#ffff07]"></hr>
         </div>
     );
 }

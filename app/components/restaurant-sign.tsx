@@ -5,7 +5,7 @@ export default function RestaurantSign() {
         <div className="flex gap-[13px] lg:gap-10 items-center">
             <div className="w-[80px] h-[80px] rounded-[8px] lg:w-40 lg:h-40 bg-[#BCBDC1] lg:rounded-3xl overflow-hidden">
                 <Image
-                    src={"/bossman-restaurant-logo.png"}
+                    src={"/logos/bossman-restaurant-logo.png"}
                     alt="logo"
                     width={1132}
                     height={1132}

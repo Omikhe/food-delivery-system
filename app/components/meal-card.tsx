@@ -5,12 +5,13 @@ import Image from "next/image";
 export default function MealCard() {
     return (
         <div className="flex flex-col p-[17px] w-[166px] h-[182px] lg:w-64 lg:h-80 lg:p-6 justify-between items-center bg-[#F6F5FA] text-black rounded-2xl">
-            <div className="flex items-center justify-center w-full h-full rounded-3xl mb-1 overflow-hidden">
+            <div className="flex items-center justify-center w-full h-full rounded-3xl mb-1 overflow-hidden p-0">
                 <Image
                     src={"/meals/burger.png"}
                     alt="meal"
                     width={1132}
                     height={1132}
+                    className="w-full h-full object-cover"
                 />
             </div>
 

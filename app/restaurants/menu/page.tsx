@@ -6,7 +6,7 @@ function CallToAction() {
     return (
         <div className="mt-20 mb-7 w-full">
             <div className="w-[240px] h-[88px] text-[32px] mb-[16px] text-left font-bold lg:w-[600px] lg:text-[40px] lg:font-bold lg:mb-[4px]">Checkout our menu! 😋</div>
-            <hr className="border border-[#ffff07]"></hr>
+            <hr className="border border-[#DDDDDD]"></hr>
         </div>
     );
 }

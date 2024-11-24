@@ -7,7 +7,7 @@ export default function Page() {
     return (
         <main>
             <Navbar></Navbar>
-            <Link href={"/restaurants/menu"} className="flex justify-start items-center py-6  max-w-7xl mx-auto w-full font-bold text-[18px]">
+            <Link href={"/restaurants/menu"} className="hidden md:flex justify-start items-center py-6  max-w-7xl mx-auto w-full font-bold text-[18px] mt-[64px]">
                 <ChevronLeftIcon
                     className="h-10 w-10 text-gray-900"
                     strokeWidth={2}

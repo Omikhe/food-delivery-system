@@ -20,7 +20,7 @@ export default function MealCard() {
                 <p className="text-sm lg:text-base text-center">MWK2,500</p>
             </div>
 
-            <Link className="flex mt-[4px] text-sm items-center justify-center lg:text-base w-[133px] h-[29px] lg:w-full lg:h-[60px] p-2 bg-[#FF6C44] hover:bg-orange-500 text-white rounded-md" href="/">
+            <Link className="flex mt-[4px] text-sm items-center justify-center lg:text-base w-[133px] h-[29px] lg:w-full lg:h-[60px] p-2 bg-[#FF6C44] hover:bg-orange-500 text-white rounded-md" href="/checkout">
                 <button className="">Order</button>
             </Link>
         </div>
